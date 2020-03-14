@@ -1,0 +1,152 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    color:aqua;
+    background-color: #f9f4ef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 616px;
+    margin-top: 20px;
+}
+
+.top-header {
+    color: #001858;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.header-second {
+    padding-left: 20px;
+    font-size: small;
+}
+
+.top-comment {
+    color: #172c66;
+    font-size: 10px;
+    text-align: right;
+    padding-bottom: 20px;
+
+}
+
+.search-window {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.data-search .input {
+    background-color: #fffffe;
+    color: #001858;
+    border: 1px solid #020826;
+}
+
+.data-search .list li {
+    background-color: #fffffe;
+    color: #001858;
+    overflow: hidden;
+}
+
+.resultsInfo {
+    position: relative;
+}
+
+.resultsInfo select {
+    background-color: #f9f4ef;
+    color: #172c66;
+    outline: 1px solid #020826;
+    background: transparent;
+    background-image: none;
+    padding-right: 50px;
+}
+
+.resultsInfo option {
+    background-color: #417A9B;
+    color: #fff;
+}
+
+.result-list .resultStats {
+    color: #172c66;
+}
+
+.result-list  .pagination {
+    color: #172c66;
+    background-color: #f9f4ef;
+}
+
+.result-list .listItem {
+    background-color: #fffffe;
+    padding: 8px;
+    margin: 2px 0;
+    border: 0;
+}
+
+.result-list .listItem:hover {
+    background-color: #eaddcf;
+}
+
+.result-list article, .result-list article div {
+    display: flex;
+    align-items: left;
+}
+
+.result-list article h2 {
+    display: flex;
+    align-items: center;
+    white-space: pre-line;
+    color: #001858;
+    padding: 2px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.listcolumn1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.listcolumn2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.genre {
+    color: #172c66;
+    width: 100px;
+}
+
+.area {
+    color: #172c66;
+    width: 100px;
+}
+
+.score {
+    text-align: right;
+    color: #f25042;
+    width: 50px;
+    font-size: large;
+    padding: 8px;
+}
+
+.usecase {
+    color: #172c66;
+    width: 100px;
+    font-size: small;
+}
+
+.comment {
+    color: #385073;
+    font-size: small;
+}
