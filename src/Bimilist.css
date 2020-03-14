@@ -11,8 +11,15 @@ body {
     align-items: center;
 }
 
+@media only screen and (max-device-width : 480px) {
+    .main-container {
+        max-width: 480px;
+        margin-top: 20px;
+    }
+}
+
 .main-container {
-    max-width: 1024;
+    max-width: 1024px;
     margin-top: 20px;
 }
 
@@ -124,12 +131,12 @@ body {
 
 .genre {
     color: #172c66;
-    width: 100px;
+    width: 120px;
 }
 
 .area {
     color: #172c66;
-    width: 100px;
+    width: 120px;
 }
 
 .score {
@@ -142,7 +149,7 @@ body {
 
 .usecase {
     color: #172c66;
-    width: 100px;
+    width: 150px;
     font-size: small;
 }
 
