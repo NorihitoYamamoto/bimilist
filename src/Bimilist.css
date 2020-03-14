@@ -12,7 +12,7 @@ body {
 }
 
 .main-container {
-    width: 616px;
+    max-width: 1024;
     margin-top: 20px;
 }
 
