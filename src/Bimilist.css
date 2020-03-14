@@ -16,7 +16,7 @@ body {
     margin-top: 20px;
 }
 
-@media screen and (max-width:767px) {
+@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)  {
     .main-container {
         max-width: 480px;
         margin-top: 20px;

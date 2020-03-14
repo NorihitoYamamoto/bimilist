@@ -8,6 +8,7 @@ const { ResultListWrapper } = ReactiveList;
 class App extends Component {
     render() {
         return (
+            <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0" />
             <div className="main-container">
                 <div className="top-header">
                     <h1>Bimi<span style={{fontSize:18}}>(美味)</span>list</h1>
