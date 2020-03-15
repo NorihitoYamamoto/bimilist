@@ -124,25 +124,25 @@ body {
 
 .genre {
     color: #172c66;
-    width: 120px;
+    width: 80px;
 }
 
 .area {
     color: #172c66;
-    width: 120px;
+    width: 80px;
 }
 
 .score {
     text-align: right;
     color: #f25042;
-    width: 50px;
+    width: 40px;
     font-size: large;
     padding: 8px;
 }
 
 .usecase {
     color: #172c66;
-    width: 150px;
+    width: 100px;
     font-size: small;
 }
 
