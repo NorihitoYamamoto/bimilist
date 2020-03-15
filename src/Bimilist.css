@@ -12,7 +12,7 @@ body {
 }
 
 .desktop-container {
-    max-width: 1024px;
+    max-width: 640px;
     margin-top: 20px;
 }
 
@@ -93,7 +93,6 @@ body {
     background-color: #fffffe;
     padding: 8px;
     margin: 2px 0;
-    border: 0;
 }
 
 .result-list .listItem:hover {
@@ -103,6 +102,7 @@ body {
 .result-list article, .result-list article div {
     display: flex;
     align-items: left;
+    padding-left: 8px;
 }
 
 .result-list article h2 {
@@ -131,7 +131,7 @@ body {
 
 .desktop-genre {
     color: #172c66;
-    width: 120px;
+    width: 100px;
 }
 
 .mobile-genre {
@@ -141,7 +141,7 @@ body {
 
 .desktop-area {
     color: #172c66;
-    width: 120px;
+    width: 100px;
 }
 
 .mobile-area {
@@ -157,14 +157,14 @@ body {
 
 .mobile-usecase {
     color: #172c66;
-    width: 100px;
+    width: 90px;
     font-size: small;
 }
 
 .score {
     text-align: right;
     color: #f25042;
-    width: 50px;
+    width: 40px;
     font-size: large;
     padding: 8px;
 }
