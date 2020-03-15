@@ -6,6 +6,10 @@ import './Bimilist.css';
 const { ResultListWrapper } = ReactiveList;
 
 class App extends Component {
+    componentDidMount() {
+        document.title = "Bimilist"
+    }
+
     render() {
         return (
             <div className="main-container">
