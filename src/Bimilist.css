@@ -11,7 +11,12 @@ body {
     align-items: center;
 }
 
-.main-container {
+.desktop-container {
+    max-width: 1024px;
+    margin-top: 20px;
+}
+
+.mobile-container {
     max-width: 480px;
     margin-top: 20px;
 }
@@ -83,6 +88,8 @@ body {
 }
 
 .result-list .listItem {
+    display: flex;
+    flex-direction: column;
     background-color: #fffffe;
     padding: 8px;
     margin: 2px 0;
@@ -122,28 +129,44 @@ body {
     margin-top: 8px;
 }
 
-.genre {
+.desktop-genre {
     color: #172c66;
-    width: 80px;
+    width: 120px;
 }
 
-.area {
+.mobile-genre {
     color: #172c66;
-    width: 80px;
+    width: 60px;
+}
+
+.desktop-area {
+    color: #172c66;
+    width: 120px;
+}
+
+.mobile-area {
+    color: #172c66;
+    width: 60px;
+}
+
+.desktop-usecase {
+    color: #172c66;
+    width: 150px;
+    font-size: small;
+}
+
+.mobile-usecase {
+    color: #172c66;
+    width: 100px;
+    font-size: small;
 }
 
 .score {
     text-align: right;
     color: #f25042;
-    width: 40px;
+    width: 50px;
     font-size: large;
     padding: 8px;
-}
-
-.usecase {
-    color: #172c66;
-    width: 100px;
-    font-size: small;
 }
 
 .comment {
