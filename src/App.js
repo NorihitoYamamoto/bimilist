@@ -20,7 +20,9 @@ class App extends Component {
                     <p className="header-second">by Norihito Yamamoto</p>
                 </div>
                 <div className="top-comment">
-                    * 評点はあくまでNorihito Yamamoto個人の感想です。
+                    * 評点はあくまでNorihito Yamamoto個人の感想です。<br>
+                    * 評点がないものは行ったことがないが行きたいところです。<br>
+                    * 各項目は食べログへのリンクとなっています。
                 </div>
                 <ReactiveBase
                     app="bimilist"
