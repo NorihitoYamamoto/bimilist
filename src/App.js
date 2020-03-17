@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {DataSearch, ReactiveBase, ReactiveList, ResultList, SelectedFilters} from '@appbaseio/reactivesearch';
 import MediaQuery from 'react-responsive';
-import { withAuthenticator } from 'aws-amplify-react';
 import './App.css';
 import './Bimilist.css';
 
@@ -235,4 +234,4 @@ class App extends Component {
     }
 }
 
-export default withAuthenticator(App);
+export default App;
