@@ -25,7 +25,7 @@ class App extends Component {
                 </div>
                 <ReactiveBase
                     app="bimilist"
-                    url="https://search-bimilist-gzvyhtn4npysg26ckofr6fnjse.ap-northeast-1.es.amazonaws.com"
+                    url="https://search-bimilist2-elubdsi3x4beh3gb6tcbdxd72u.ap-northeast-1.es.amazonaws.com"
                     theme={{
                         typography: {
                             fontFamily: 'sans-serif',

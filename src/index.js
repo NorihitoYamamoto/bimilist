@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
 import Amplify from 'aws-amplify';
+
 Amplify.configure({
   Auth: {
       identityPoolId: 'ap-northeast-1:df3459fe-f361-455d-9be8-0ac6629071ae',
