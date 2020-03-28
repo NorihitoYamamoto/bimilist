@@ -1,10 +1,31 @@
 import React, {Component} from 'react';
 import {DataSearch, ReactiveBase, ReactiveList, ResultList, SelectedFilters} from '@appbaseio/reactivesearch';
 import MediaQuery from 'react-responsive';
+import { Auth } from 'aws-amplify';
+import { withAuthenticator } from 'aws-amplify-react';
+import aws4 from "aws4";
 import './App.css';
 import './Bimilist.css';
 
 const { ResultListWrapper } = ReactiveList;
+
+const opts = {
+    method: "GET",
+    service: "es",
+    region: "ap-northeast-1",
+    path: "/bimilist2/_search",
+    host: "https://search-bimilist2-elubdsi3x4beh3gb6tcbdxd72u.ap-northeast-1.es.amazonaws.com",
+    url: "https://search-bimilist2-elubdsi3x4beh3gb6tcbdxd72u.ap-northeast-1.es.amazonaws.com/latest/require-auth"
+};
+
+const credentials = Auth.currentCredentials();
+const { accessKeyId, secretAccessKey, sessionToken } = credentials;
+const request = aws4.sign(opts, {
+    accessKeyId,
+    secretAccessKey,
+    sessionToken
+});
+delete request.headers.Host;
 
 class App extends Component {
     componentDidMount() {
@@ -27,6 +48,9 @@ class App extends Component {
                 <ReactiveBase
                     app="bimilist"
                     url="https://search-bimilist2-elubdsi3x4beh3gb6tcbdxd72u.ap-northeast-1.es.amazonaws.com"
+                    headers={{
+                        headers: request.headers
+                    }}
                     theme={{
                         typography: {
                             fontFamily: 'sans-serif',
@@ -236,4 +260,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default withAuthenticator(App);
