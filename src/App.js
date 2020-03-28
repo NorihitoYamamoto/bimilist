@@ -4,8 +4,6 @@ import MediaQuery from 'react-responsive';
 import './App.css';
 import './Bimilist.css';
 
-import { withAuthenticator } from 'aws-amplify-react';
-
 const { ResultListWrapper } = ReactiveList;
 
 class App extends Component {
@@ -238,4 +236,4 @@ class App extends Component {
     }
 }
 
-export default withAuthenticator(App);
+export default App;
